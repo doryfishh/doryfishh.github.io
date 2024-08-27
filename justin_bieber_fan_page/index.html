@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Bieber Fan Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-image">
+            <img src="images/justin1.jpg" alt="Justin Bieber">
+            <h1>Welcome to the Ultimate Justin Bieber Fan Page</h1>
+        </div>
+    </header>
+
+    <!-- Biography Section -->
+    <section id="biography">
+        <h2>Biography</h2>
+        <p>Justin Bieber, the Canadian pop sensation, has been a dominant force in the music industry...</p>
+        <img src="images/justin2.jpg" alt="Justin Bieber">
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>A Glimpse of Justin Through the Years</h2>
+        <div class="interactive-gallery">
+            <div class="thumbnail" style="background-image: url('images/justin3.jpg');"></div>
+            <div class="thumbnail" style="background-image: url('images/justin4.jpg');"></div>
+            <div class="thumbnail" style="background-image: url('images/justin5.jpg');"></div>
+            <div class="thumbnail" style="background-image: url('images/justin6.jpg');"></div>
+        </div>
+        <div id="main-image-container">
+            <img id="main-image" src="images/justin3.jpg" alt="Justin Bieber">
+        </div>
+    </section>
+
+    <!-- Music and Videos Section -->
+    <section id="music">
+        <h2>Music Videos</h2>
+        <div class="video-container" tabindex="0">
+            <div class="video-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kffacxfA7G4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tQ0yjYUFKAE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DK_0jXPuIr0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pE49WK-oNjU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="youtube-channel">
+            <a href="https://www.youtube.com/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" target="_blank">Visit Justin Bieber's Official YouTube Channel</a>
+        </div>
+    </section>
+
+    <!-- Minesweeper Section -->
+    <section id="minesweeper">
+        <h2>Justin Bieber Minesweeper</h2>
+        <div id="minesweeper-game"></div>
+        <button onclick="initGame()">Restart Game</button>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social-media">
+        <h2>Follow Justin on Instagram</h2>
+        <a href="https://www.instagram.com/justinbieber/?hl=en" target="_blank">
+            <img src="images/instagram-logo.png" alt="Instagram">
+            <p>@justinbieber</p>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Justin Bieber Fan Page | <a href="#">Contact Us</a> | <a href="#">Follow Justin on Instagram</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

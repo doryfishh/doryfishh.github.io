@@ -1,0 +1,243 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e0e0e0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.header-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.header-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    border-radius: 10px;
+}
+
+/* Biography Section */
+#biography {
+    padding: 2em;
+    background: #fff;
+    text-align: center;
+}
+
+#biography img {
+    width: 50%;
+    height: auto;
+    margin-top: 1em;
+    border-radius: 15px;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 2em;
+    background: linear-gradient(120deg, #ff758c, #ff7eb3);
+    color: #fff;
+    text-align: center;
+}
+
+.interactive-gallery {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+#main-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+#main-image {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+}
+
+/* Music and Videos Section */
+#music {
+    padding: 2em;
+    background: #fff;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #ff7eb3 transparent;
+}
+
+.video-container:focus {
+    outline: none;
+}
+
+.video-item {
+    flex: 0 0 auto;
+}
+
+.video-item iframe {
+    border-radius: 15px;
+}
+
+.youtube-channel {
+    margin-top: 20px;
+}
+
+.youtube-channel a {
+    font-size: 1.2rem;
+    color: #ff7eb3;
+    text-decoration: none;
+}
+
+.youtube-channel a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Section */
+#social-media {
+    padding: 2em;
+    background: #ff7eb3;
+    text-align: center;
+}
+
+#social-media img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+#social-media p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    padding: 1em;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Heart Effect */
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('images/heart.png') no-repeat center center / contain;
+    animation: float 2s ease-out forwards;
+    pointer-events: none;
+    z-index: 1000;
+    transform-origin: center;
+}
+
+@keyframes float {
+    0% {
+        transform: scale(0) translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5) translateY(-50px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(2) translateY(-100px);
+        opacity: 0;
+    }
+}
+
+/* Minesweeper Section */
+#minesweeper {
+    padding: 2em;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#minesweeper-game {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.tile {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border: 2px solid #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tile.bomb {
+    background: url('images/justin-bomb.png') no-repeat center center;
+    background-size: cover;
+}
+
+.tile.revealed {
+    background-color: #fff;
+    border-color: #888;
+}
+
+.tile.flag {
+    background-color: #ff7eb3;
+}
+
+
